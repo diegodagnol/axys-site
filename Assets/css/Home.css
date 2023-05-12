@@ -1,0 +1,133 @@
+.introduction {
+    background-color: #000;
+    height: 1500px;
+}
+
+.introduction__title {
+    color: var(--color-white);
+    width: 80%;
+}
+
+.img-block {
+    height: 100vh;
+}
+
+.img-block picture {
+    width: 35%;
+}
+
+.introduction__img {
+    width: 100%;
+    opacity: 0.5;
+    display: block;
+    margin: 0 auto;
+    transition: 200ms ease;
+}
+
+.aboutUs {
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position-y: bottom;
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' version='1.1' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:svgjs='http://svgjs.com/svgjs' width='1920' height='300' preserveAspectRatio='none' viewBox='0 0 1920 300'%3e%3cg mask='url(%26quot%3b%23SvgjsMask1112%26quot%3b)' fill='none'%3e%3cpath d='M 0%2c70 C 76.8%2c80.8 230.4%2c125.6 384%2c124 C 537.6%2c122.4 614.4%2c61 768%2c62 C 921.6%2c63 998.4%2c128.2 1152%2c129 C 1305.6%2c129.8 1382.4%2c72.8 1536%2c66 C 1689.6%2c59.2 1843.2%2c89.2 1920%2c95L1920 300L0 300z' fill='rgba(115%2c 143%2c 167%2c 1)'%3e%3c/path%3e%3cpath d='M 0%2c190 C 64%2c211.2 192%2c292 320%2c296 C 448%2c300 512%2c216.8 640%2c210 C 768%2c203.2 832%2c268.6 960%2c262 C 1088%2c255.4 1152%2c174.2 1280%2c177 C 1408%2c179.8 1472%2c269.6 1600%2c276 C 1728%2c282.4 1856%2c222.4 1920%2c209L1920 300L0 300z' fill='rgba(7%2c 19%2c 48%2c 1)'%3e%3c/path%3e%3c/g%3e%3cdefs%3e%3cmask id='SvgjsMask1112'%3e%3crect width='1920' height='300' fill='white'%3e%3c/rect%3e%3c/mask%3e%3c/defs%3e%3c/svg%3e");
+}
+
+.aboutUs .about-img {
+    z-index: -1;
+}
+.aboutUs, .products {
+    padding-top: 10rem !important
+}
+
+.ecommerce__title > span:first-child {
+    font-weight: 800;
+}
+
+.cta {
+    position: relative;
+    margin: auto;
+    padding: 12px 18px;
+    transition: all 0.2s ease;
+    border: none;
+    background: none;
+   }
+   
+   .cta:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+    border-radius: 50px;
+    background: var(--color-medium);
+    width: 45px;
+    height: 45px;
+    transition: all 0.3s ease;
+    opacity: 0.5;
+   }
+   
+   .cta span {
+    position: relative;
+    font-family: "Ubuntu", sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+    letter-spacing: 0.05em;
+    color: var(--color-medium);
+   }
+   
+   .cta svg {
+    position: relative;
+    top: 0;
+    margin-left: 10px;
+    fill: none;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    stroke: var(--color-medium);
+    stroke-width: 2;
+    transform: translateX(-5px);
+    transition: all 0.3s ease;
+   }
+   
+   .cta:hover:before {
+    width: 100%;
+    background: var(--color-medium);
+   }
+   
+   .cta:hover svg {
+    transform: translateX(0);
+   }
+   
+   .cta:active {
+    transform: scale(0.95);
+   }
+
+.products {
+    padding-bottom: 6em;
+    background-color: var(--bg-products);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position-y: bottom;
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' version='1.1' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:svgjs='http://svgjs.com/svgjs' width='1920' height='400' preserveAspectRatio='none' viewBox='0 0 1920 400'%3e%3cg mask='url(%26quot%3b%23SvgjsMask1049%26quot%3b)' fill='none'%3e%3cpath d='M 0%2c3 C 96%2c27.8 288%2c125.8 480%2c127 C 672%2c128.2 768%2c13.2 960%2c9 C 1152%2c4.8 1248%2c107.8 1440%2c106 C 1632%2c104.2 1824%2c21.2 1920%2c0L1920 400L0 400z' fill='rgba(3%2c 47%2c 73%2c 1)'%3e%3c/path%3e%3cpath d='M 0%2c199 C 55%2c210.8 165%2c268.4 275%2c258 C 385%2c247.6 440%2c151.2 550%2c147 C 660%2c142.8 715%2c233 825%2c237 C 935%2c241 990%2c171.6 1100%2c167 C 1210%2c162.4 1265%2c217.8 1375%2c214 C 1485%2c210.2 1541%2c141.4 1650%2c148 C 1759%2c154.6 1866%2c227.2 1920%2c247L1920 400L0 400z' fill='rgba(1%2c 29%2c 46%2c 1)'%3e%3c/path%3e%3cpath d='M 0%2c337 C 64%2c335.6 192%2c324.4 320%2c330 C 448%2c335.6 512%2c374.4 640%2c365 C 768%2c355.6 832%2c284.6 960%2c283 C 1088%2c281.4 1152%2c349.4 1280%2c357 C 1408%2c364.6 1472%2c317 1600%2c321 C 1728%2c325 1856%2c365.8 1920%2c377L1920 400L0 400z' fill='rgba(2%2c 17%2c 26%2c 1)'%3e%3c/path%3e%3c/g%3e%3cdefs%3e%3cmask id='SvgjsMask1049'%3e%3crect width='1920' height='400' fill='white'%3e%3c/rect%3e%3c/mask%3e%3c/defs%3e%3c/svg%3e");
+}
+
+.clientes {
+    background-color: var(--bg-clientes);
+}
+
+@media screen and (min-width: 992px){
+    .aboutUs__title, .products__tite {
+        font-size: 3rem !important
+    }
+}
+
+.logo__cliente {
+    width: 100%;
+    aspect-ratio: 1 / 0.8;
+    height: 100%;
+}
+
+.logo__cliente--img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    object-position: center;
+}

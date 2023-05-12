@@ -1,0 +1,79 @@
+.footer {
+    background-color: var(--bg-footer);
+}
+
+.footer__link {
+    transition: 200ms;
+    width: fit-content;
+}
+
+.footer__link:hover, .footer__link:active, .footer__link:focus {
+    opacity: 0.7;
+}
+
+.social__links svg{
+    fill: var(--color-white);
+    width: 30px;
+    height: 30px;
+}
+
+.contato__button {
+    height: 100px;
+}
+
+.cta__button {
+    font-family: inherit;
+    font-size: 20px;
+    background: var(--color-institutional);
+    color: var(--color-white);
+    padding: 0.7em 1em;
+    padding-left: 0.9em;
+    display: flex;
+    align-items: center;
+    border: none;
+    border-radius: 55px 0 0 55px;
+    overflow: hidden;
+    transition: all 0.2s;
+    width: 450px;
+    max-width: 80%;
+    height: 95px;
+    right: 0;
+  }
+  
+  .cta__button span {
+    display: block;
+    margin-left: 0.3em;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .cta__button svg {
+    display: block;
+    transform-origin: center center;
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .cta__button:hover .svg-wrapper {
+    animation: fly-1 0.6s ease-in-out infinite alternate;
+  }
+  
+  .cta__button:hover svg {
+    transform: translateX(1.2em) rotate(45deg) scale(1.1);
+  }
+  
+  .cta__button:hover span {
+    transform: translateX(5em);
+  }
+  
+  .cta__button:active {
+    transform: scale(0.95);
+  }
+  
+  @keyframes fly-1 {
+    from {
+      transform: translateY(0.1em);
+    }
+  
+    to {
+      transform: translateY(-0.1em);
+    }
+  }
