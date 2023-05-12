@@ -1,0 +1,64 @@
+:root {
+    --bg-body: #fff;
+    --bg-products: #071330;
+    --bg-clientes: #02111A;
+    --bg-footer: #000;
+    --color-white: #fff;
+    --color-black: #000;
+    --color-menu-one: #fff;
+    --color-institutional: #e92a2a;
+    --bg-header-items: #c4c4c4;
+    --color-medium: #c4c4c4;
+    --bg-tooltip: #e92a2a;
+}
+
+@font-face {
+    font-family: 'Exo Demibold', sans-serif;
+    src: url('../fonts/Exo/Exo-DemiBold.otf') format('otf');
+    font-weight: 1 999;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Exo', sans-serif;
+    src: url('../fonts/Exo/Exo-Regular.otf') format('otf');
+    font-weight: 1 999;
+    font-display: swap;
+}
+
+*::-webkit-scrollbar {
+    display: none;
+}
+
+body {
+    background-color: var(--bg-body);
+    font-family: 'Poppins', sans-serif;
+    overflow-x: hidden;
+    color: var(--color-black)
+}
+
+.exo__font {
+    font-family: 'Exo', sans-serif;
+    font-style: italic;
+}
+
+.exoDemi__font {
+    font-family: 'Exo Demibold', sans-serif;
+}
+
+.parallax-shape {
+    z-index: -1;
+    transition: 10ms ease-in-out;
+}
+
+.tooltip-inner {
+    background-color: var(--bg-tooltip) !important;
+}
+
+.bs-tooltip-auto[data-popper-placement^=top] .tooltip-arrow::before, .bs-tooltip-top .tooltip-arrow::before {
+    border-top-color: var(--bg-tooltip);
+}
+
+.bs-tooltip-auto[data-popper-placement^=right] .tooltip-arrow::before, .bs-tooltip-end .tooltip-arrow::before {
+    border-right-color: var(--bg-tooltip);
+}
