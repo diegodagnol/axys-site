@@ -10,6 +10,11 @@
     --bg-header-items: #c4c4c4;
     --color-medium: #c4c4c4;
     --bg-tooltip: #e92a2a;
+    --bg-pagination-active: #000;
+    --cz-dark: #585858;
+    --cz-light: #B9B9B9;
+    --bg-block: #f4f4f4;
+    --bg-card: #ffffff;
 }
 
 @font-face {
@@ -34,7 +39,8 @@ body {
     background-color: var(--bg-body);
     font-family: 'Poppins', sans-serif;
     overflow-x: hidden;
-    color: var(--color-black)
+    color: var(--color-black);
+    width: 100vw;
 }
 
 .exo__font {
@@ -62,3 +68,12 @@ body {
 .bs-tooltip-auto[data-popper-placement^=right] .tooltip-arrow::before, .bs-tooltip-end .tooltip-arrow::before {
     border-right-color: var(--bg-tooltip);
 }
+
+.title__overlay {
+    font-size: 12em;
+    opacity: 0.08;
+    z-index: -1;
+    left: -40px;
+    top: 25px;
+}
+
